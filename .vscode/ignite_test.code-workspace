@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "../file_parser_lambda"
+    },
+    {
+      "path": "../data_retrieval_lambda"
+    },
+    {
+      "path": "../setup_sql"
+    },
+    {
+      "path": ".."
+    },
+],
+}

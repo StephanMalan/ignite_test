@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "data_retrieval_lambda"
+version = "0.1.0"
+description = "Python code for data retrieval lambda function"
+authors = ["Stephan Malan <stephanmalan.rob@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pymysql = "^1.1.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+boto3 = "^1.28.62"
+boto3-stubs = { extras = ["essential"], version = "^1.28.62" }
+mypy = "^1.6.0"
+pylint = "^3.0.1"
+ruff = "^0.0.292"
+aws-lambda-powertools = "^2.26.0"
+pydantic = "1.10.13"
+
+
+[tool.poetry.group.test.dependencies]
+coverage = "^7.3.2"
+moto = { extras = ["all"], version = "^4.2.6" }
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

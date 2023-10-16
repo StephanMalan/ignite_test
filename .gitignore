@@ -6,13 +6,17 @@ dist
 .mypy_cache/
 .ruff_cache/
 
-/.coverage
+.coverage
 /.pytest_cache
 /htmlcov
 
-ignite_test/*.zip
+file_parser_lambda/package.zip
+file_parser_lambda/package
+data_retrieval_lambda/package.zip
+data_retrieval_lambda/package
 
 infrastructure/.terraform
 infrastructure/*.hcl
 infrastructure/*.tfstate
 infrastructure/*.backup
+infrastructure/secret.tfvars

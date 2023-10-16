@@ -33,10 +33,10 @@ You should create another AWS Lambda function that fetches specific data from th
 
 The function should take two input parameters:
 
-- `device_id``
+- `device_id`
 - `date_range` (start and end timestamp).
 
-Upon invocation, the function should return all the data rows for the given ` device_id`` that fall within the specified  `date_range`.
+Upon invocation, the function should return all the data rows for the given ` device_id` that fall within the specified `date_range`.
 It should also return some basic statistics like mean, median, min, and max for each numerical data column.
 
 ## Additional Requirements
