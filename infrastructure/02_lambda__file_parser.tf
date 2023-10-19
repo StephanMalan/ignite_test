@@ -85,7 +85,7 @@ resource "aws_iam_policy" "file_parser_lambda_policy" {
         Action = [
           "secretsmanager:GetSecretValue"
         ],
-        Resource = aws_secretsmanager_secret.acme_secrets.arn
+        Resource = data.aws_secretsmanager_secret.acme_secrets.arn
       }
     ]
   })

@@ -25,6 +25,9 @@ terra_apply: prepare_lambda
 terra_plan: prepare_lambda
 	terraform -chdir=infrastructure plan
 
+terra_destroy:
+	terraform -chdir=infrastructure destroy
+
 setup_mysql:
 	sh setup_sql/run.sh
 

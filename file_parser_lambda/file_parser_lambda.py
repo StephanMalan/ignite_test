@@ -180,6 +180,7 @@ def write_to_rds(
             print("Inserting data")
             with conn.cursor() as cur:
                 cur.executemany(select_statement, [d.get_values() for d in data])
+                conn.commit()
                 print(f"Successfully inserted {cur.rowcount} row(s) of data")
     except pymysql.err.OperationalError as e:
         raise LambdaError(f"Failed to connect to RDS database: {e}") from e

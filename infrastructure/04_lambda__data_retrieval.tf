@@ -76,7 +76,7 @@ resource "aws_iam_policy" "data_retrieval_lambda_policy" {
         Action = [
           "secretsmanager:GetSecretValue"
         ],
-        Resource = aws_secretsmanager_secret.acme_secrets.arn
+        Resource = data.aws_secretsmanager_secret.acme_secrets.arn
       }
     ]
   })
